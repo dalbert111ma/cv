@@ -54,14 +54,14 @@ jobs:
       - name: Commit the new PDF
         if: steps.changed.outputs.run == 'true'
         run: |
-          cp overleaf/main.pdf cv.pdf
+          cp overleaf/main.pdf "CV - M Dalbert Ma.pdf"
           echo "$OVERLEAF_SHA" > .overleaf-sha
-          if git diff --quiet -- cv.pdf .overleaf-sha; then
+          if git diff --quiet -- "CV - M Dalbert Ma.pdf" .overleaf-sha; then
             echo "Rebuilt PDF is byte-identical; nothing to commit."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add cv.pdf .overleaf-sha
+          git add "CV - M Dalbert Ma.pdf" .overleaf-sha
           git commit -m "Update CV from Overleaf (${OVERLEAF_SHA:0:7})"
           git push
