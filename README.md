@@ -2,11 +2,8 @@
 
 Published at <https://dalbert111ma.github.io/cv/CV%20-%20M%20Dalbert%20Ma.pdf>.
 
-`CV - M Dalbert Ma.pdf` is built automatically from the Overleaf project
-`6a510f2b49adad6c1fbeeb2a` by `.github/workflows/sync-cv.yml`, which checks
-Overleaf every two hours and recompiles whenever the source has changed.
-`.overleaf-sha` records the Overleaf commit the current PDF was built from.
+`CV - M Dalbert Ma.pdf` is the current published CV. It is maintained directly
+in this repository and will not be overwritten automatically.
 
-Do not edit `CV - M Dalbert Ma.pdf` here — edit the Overleaf project. To publish immediately
-instead of waiting for the schedule, run the "Sync CV from Overleaf" workflow
+The optional "Sync CV from Overleaf" workflow runs only when manually started
 from the Actions tab.

@@ -1,10 +1,7 @@
 name: Sync CV from Overleaf
 
 on:
-  schedule:
-    # Every 2 hours (GitHub cron is best-effort; expect some minutes of drift)
-    - cron: '23 */2 * * *'
-  workflow_dispatch:        # lets you trigger an immediate rebuild from the Actions tab
+  workflow_dispatch: # manual only; the published PDF is otherwise maintained directly in this repository
 
 permissions:
   contents: write
